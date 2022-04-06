@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+ <title>sitcon學習</title>
+  <link href="style2.css" rel="stylesheet" media="all">
+ <meta charset = "utf-8">
+</head>
+
+<body>
+    <h1>sitcon學習</h1>
+    <div class="tab">
+        <button class="tablinks" onclick="openCity(event, 'lobby')">線上大廳</button>
+        <button class="tablinks" onclick="openCity(event, 'open1')">開放式議程1</button>
+        <button class="tablinks" onclick="openCity(event, 'open2')">開放式議程2</button>
+        <button class="tablinks" onclick="openCity(event, 'open3')">開放式議程3</button>
+        <button class="tablinks" onclick="openCity(event, 'thinking')">心得</button>
+       </div>
+    <div id ="wrap">
+    <div id="lobby" class= "tabcontent" >
+        <p>右邊三張圖為線上大廳</p> 
+        <img class="photo"  width="560" height="315" src="https://i.imgur.com/yJDU79A.png" alt="大廳1">
+        <img class="photo"  width="560" height="315" src="https://i.imgur.com/mZvffz8.png" alt="大廳2">
+        <img class="photo"  width="560" height="315" src="https://i.imgur.com/zhejcv3.png" alt="大廳3">   
+     </div>
+     <div id="open1" class= "tabcontent" >
+        <p>右邊兩圖為開放式議程的的截圖</p>
+        <img class="photo"  src="https://i.imgur.com/EmhgGB9.png">
+        <img class="photo"  width="560" height="315" src="https://i.imgur.com/YFCzxLW.png">
+        <section>
+         <p class="more">心得:
+        可以獲得同是學生的視角，他們對程式的見解，以及解決問題的方式，跟相關經驗。<br>
+        讓我對於資訊的部分又有更廣泛的見解，讓我知道其他學校的學生是如何在現今的資源困境下做出的改變和決定，如創立社群、自辦比賽和自架教學網站等。<br>
+        他們也利用了各種不同的方法在非常少的資源下，想辦法從困境走出去。<br>
+        而且在開放式議程中，還會有各種不同人的想法及看法，也可以跟講者進行交流，我覺得非常特別。</p>
+        </section>
+     </div>
+     <div id="open2" class= "tabcontent" >
+        <p>右邊兩圖為資安開放式議程的相關截圖</p>
+        <img class="photo"  src="https://i.imgur.com/Iwc6N3E.png">
+        <img class="photo"  width="560" height="315" src="https://i.imgur.com/o9GtAVH.png">
+        <section>
+            <p class="more">心得:<br>
+            在這次議程中，我稍解了資安的部分知識，在這方面我也是初學者，第一次學習，在議程中講者介紹了 HACKTHEBOX 和 PWN.COLLEGE 來進行學習，第一次使用這網站有點不太習慣，看來還需要繼續拓展相關的知識。</p>
+        </section>
+     </div>
+     <div id="open3" class= "tabcontent" >
+        <p>右邊三張圖為資訊學習開放議程的相關截圖</p>
+        <img class="photo"  src="https://i.imgur.com/S1NSrbN.png">
+        <img class="photo"  width="560" height="315" src="https://i.imgur.com/S4o3jMG.png">
+        <img class="photo"  width="560" height="315" src="https://i.imgur.com/QmJqHe7.png">
+        <section>
+            <p class="more">心得:<br>
+                在這次議程中，講者跟聽者是有非常多的互動的，聽者在於各個不同的領域，有
+                大學生、自學人士和社會人士等......大家的意見與想法都有很多不同，也指出了
+                很多現今的許多問題，像可能部分學校選定之教材銜接不上當代的內容或是高職
+                的資訊科更偏向於硬體方面，且偏鄉的資訊教育也是不能跟城市比的，大家在發
+                言時也相當活躍，也讓我對於教育學習的想法，也多了一點突破性。
+            </p>      
+        </section>
+     </div>
+     <div id="thinking" class= "tabcontent" >
+        <img class="center"  width="560" height="315" src="https://i.imgur.com/9fHRI0W.png">
+        <img class="center"  width="560" height="315" src="https://i.imgur.com/oj1YASE.png">
+        <section>
+            <p class="more">總體心得:<br>
+                在這次 SITCON 中我接觸了更多的新東西，跟更多有趣的人，讓我知道有許多默默努力的人，想要推廣資訊，也辛苦這次的主辦了!  
+            </p>      
+        </section>
+     </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+    <script>
+        function openCity(evt, cityName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+        </script>
+</body>
